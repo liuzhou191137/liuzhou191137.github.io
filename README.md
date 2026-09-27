@@ -32,6 +32,15 @@
   <img src="https://skillicons.dev/icons?i=c,cpp,visualstudio,html,git,github&theme=dark" alt="技术栈图标">
 </div>
 
+## 📊 GitHub 战绩
+
+<div align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=liuzhou191137&show_icons=true&hide_border=true&bg_color=00000000&title_color=c7772a&icon_color=7d9c69&text_color=aab2bd&include_all_commits=true&count_private=true" alt="GitHub 统计" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=liuzhou191137&layout=compact&hide_border=true&bg_color=00000000&title_color=c7772a&text_color=aab2bd&langs_count=6" alt="语言统计" />
+</div>
+
+> 数字还很小？每个大佬都从这里开始——看着它们长大。
+
 ## 🛠 关于这个网站
 
 - **单文件，零依赖**：整个网站就是一个 38KB 的 `index.html`，地图截图以 base64 直接内嵌——把这一个文件发给任何人，微信里都能完整打开。
@@ -40,6 +49,7 @@
 
 ## 📈 更新日志
 
+- **2026-09-27 · v1.2**：新增 GitHub 战绩卡片（自配色主题）+ 主页悬停动效 + GitHub 入口徽章。
 - **2026-09-27 · v1.1**：README 换装——渐变横幅、打字机自我介绍、工具箱图标墙、访问计数。
 - **2026-09-27 · v1**：上线。首件展品：纯 C++ + EasyX 逐坐标手绘的 de_dust2 雷达俯视图（39 组地块数据 + 3 个绘制函数 + 1 个循环）。
 
