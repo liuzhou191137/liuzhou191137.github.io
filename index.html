@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alex · C++ 学习主页</title> <!-- 改成你自己的名字/昵称 -->
+<meta name="description" content="大一 CS 学生用 C++ + EasyX 做出能玩的东西:dust2 雷达图、反应球训练器,以及一本每个坑都有真实代码行号的《C++ 入门避坑笔记》。">
+<meta property="og:title" content="Alex · C++ 学习主页">
+<meta property="og:description" content="C++ 入门避坑笔记 + 免费资源:GitHub 星标 Top1000 新手精选表、dust2 源码。">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
 <style>
   :root{
@@ -74,6 +78,25 @@
 
   footer{margin-top:72px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
   footer b{color:var(--txt);font-weight:normal}
+
+  /* ---- 资源与支持 ---- */
+  .res{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:20px 22px;display:flex;flex-direction:column;gap:10px
+  }
+  .res h3{font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .res p{color:var(--dim);font-size:14px;margin:0}
+  .btn{
+    display:inline-block;text-align:center;margin-top:4px;
+    border:1px solid rgba(199,119,42,.55);color:var(--accent);
+    padding:7px 18px;border-radius:999px;font-size:13.5px;text-decoration:none
+  }
+  .btn:hover{background:rgba(199,119,42,.12)}
+  .btn.free{border-color:rgba(125,156,105,.55);color:var(--green)}
+  .btn.free:hover{background:rgba(125,156,105,.12)}
+  .price{font-size:12px;font-weight:normal;padding:2px 10px;border-radius:999px;
+    background:rgba(199,119,42,.15);color:var(--accent);white-space:nowrap}
+  .support{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
 </style>
 </head>
 <body>
@@ -151,6 +174,52 @@
     <div class="skill"><div class="row"><b>sizeof / size_t 惯用法</b><span>2/5 · 待口头验证</span></div>
       <div class="track"><div class="fill" style="width:40%"></div></div></div>
     <p class="locked">待解锁：引用 · 类与对象 · 文件操作 · STL · 模板</p>
+  </section>
+
+  <!-- ═══════ 作品与资源 ═══════ -->
+  <section>
+    <h2>作品与资源 <small>踩坑整理成的小册子,和一些免费的东西</small></h2>
+
+    <div class="grid">
+      <div class="res">
+        <h3>《C++ 入门避坑笔记》VOL.1 <span class="price">电子书</span></h3>
+        <p>22 页 A4 排版 PDF:整数除法截断、除零崩溃、EasyX 状态传染、越界静默裁剪——
+           每个坑都有真实代码和行号,附 9 条自查清单、9 道训练题、调试三招。
+           不是老师写的书,是一个刚踩完坑的大一学生写的。</p>
+        <a class="btn" href="#support">获取方式 →</a>
+      </div>
+      <div class="res">
+        <h3>GitHub C++ 星标 Top1000 · 新手精选 <span class="status done">免费</span></h3>
+        <p>从星标榜前 1000 里筛出「新手能看懂、能用上」的项目:
+           分类 + 中文名 + 一句话人话简介。想本地玩 AI、做界面、装机,
+           一张表搞定,不用自己大海捞针。</p>
+        <a class="btn free" href="resources/GitHub-CPP-Top1000.xlsx" download>下载 Excel ↓</a>
+      </div>
+      <div class="res">
+        <h3>de_dust2 雷达图 · 完整源码 <span class="status done">免费</span></h3>
+        <p>140 行纯 C++ / EasyX,29 块地块 + 10 箱子全表驱动,逐行语义注释。
+           配合《避坑笔记》第 5~7 章食用,看得见每一条踩坑记录的案发现场。</p>
+        <a class="btn free" href="resources/dust2_map.cpp" download>下载源码 ↓</a>
+      </div>
+      <div class="res">
+        <h3>错题库模板 <span class="status plan">整理中</span></h3>
+        <p>我的学习分析系统同款错题记录格式:「偶然失误 / 长期薄弱」区分栏、
+           置信度标注位、归因模板。整理好就放上来。</p>
+      </div>
+    </div>
+
+    <h2 id="support" style="margin-top:56px">支持我 <small>买杯饮料,换 VOL.2 的写作时间</small></h2>
+    <div class="feature" style="padding:22px 24px">
+      <p style="color:var(--dim);font-size:14.5px;margin:0 0 6px">
+        《C++ 入门避坑笔记》VOL.1 已上线;VOL.2《类与对象避坑笔记》在写。
+        觉得这些东西有用的话,可以从下面任意一个入口支持——
+        所有付费内容也都是学生价。</p>
+      <div class="support">
+        <!-- TODO: 上线后把下面两个链接换成你自己的(操作手册第 2 步) -->
+        <a class="btn" href="https://afdian.net" target="_blank">爱发电 · 电子书与资源包 ↗</a>
+        <a class="btn" href="https://github.com/sponsors" target="_blank">GitHub Sponsors ↗</a>
+      </div>
+    </div>
   </section>
 
   <footer>
